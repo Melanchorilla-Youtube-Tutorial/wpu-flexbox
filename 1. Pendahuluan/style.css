@@ -1,0 +1,62 @@
+/* .container {
+    width: 600px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container div {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    float: left;
+} */
+
+
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: stretch;
+    /* align-content: center; */
+}
+
+.container div {
+    /* width: 120px;
+    height: 120px; */
+    background-color: lightblue;
+    margin: 2px;
+    flex: 1;
+}
+
+.satu {
+    order: 1;
+}
+
+.container div.dua { 
+    order: 2;
+    flex: 2;
+    align-self: center;
+}
+
+.tiga {
+    order: 3
+}
+
+.empat {
+    order: 4;
+}
